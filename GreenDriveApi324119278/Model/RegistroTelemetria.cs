@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace GreenDriveApi324119278.Model
+{
+    public class RegistroTelemetria
+    {
+        public int Id { get; set; }
+        public int BateriaId { get; set; }
+        public double Temperatura { get; set; }
+        public double Voltagem { get; set; }
+        public DateTime DataLeitura { get; set; }
+
+        public Bateria? Bateria { get; set; }
+    }
+}
